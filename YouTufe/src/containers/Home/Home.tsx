@@ -1,9 +1,17 @@
-import React from 'react'
+import { Typography } from "antd";
+import React from "react";
+import SearchForm from "../../components/Form/SearchForm";
+import MainTitle from "./MainTitle";
+
+const { Title, Text, Paragraph: Para } = Typography;
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="home-container">
+      <MainTitle />
+      <SearchForm />
+    </div>
+  );
+};
 
-export default Home
+export default Home;

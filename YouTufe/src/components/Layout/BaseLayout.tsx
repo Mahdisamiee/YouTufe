@@ -13,12 +13,11 @@ const BaseLayout = () => {
 
   return (
     <Layout>
-      <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
+      <Header style={{ zIndex: 1, width: "100%" }}>
         <div className="logo" />
         <Menu
           theme="dark"
           mode="horizontal"
-          // defaultSelectedKeys={["home"]}
           selectedKeys={[location.pathname]}
           items={[
             { label: <NavLink to="/">Home</NavLink>, key: "/" },
@@ -26,12 +25,22 @@ const BaseLayout = () => {
           ]}
         />
       </Header>
-      <Content style={{ padding: "100px 50px" }}>
-        <div className="site-layout-content">
-          <Outlet />
-        </div>
+      <Content
+        className="layout-container"
+        style={{
+          height: "100vh",
+          padding: "100px 50px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "aqua",
+        }}
+      >
+        <Outlet />
       </Content>
-      <Footer>Footer</Footer>
+      <Footer style={{ textAlign: "center"}}>
+        TechTab ©2022 Created by TechTab
+      </Footer>
     </Layout>
   );
 };
