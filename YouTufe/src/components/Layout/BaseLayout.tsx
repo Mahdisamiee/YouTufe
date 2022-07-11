@@ -27,20 +27,12 @@ const BaseLayout = () => {
       </Header>
       <Content
         className="layout-container"
-        style={{
-          height: "100vh",
-          padding: "100px 50px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "aqua",
-        }}
       >
-        <Outlet />
+        <div className="main-container">
+          <Outlet />
+        </div>
       </Content>
-      <Footer style={{ textAlign: "center"}}>
-        TechTab ©2022 Created by TechTab
-      </Footer>
+      <Footer style={{ textAlign: "center" }}>TechTab ©2022 Created by TechTab</Footer>
     </Layout>
   );
 };

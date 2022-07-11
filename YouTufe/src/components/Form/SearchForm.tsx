@@ -12,19 +12,18 @@ const SearchForm = () => {
 
   return (
     <Form
-      name="basic"
-      labelCol={{ span: 0 }}
-      wrapperCol={{ span: 24 }}
+      name="SearchForm"
       initialValues={{ remember: true }}
       // onFinish={onFinish}
       onFinishFailed={onFinishFailed}
       autoComplete="off"
+      style={{width: "60%"}}
     >
       <Form.Item
         name="search"
         rules={[{ required: true, message: "Please enter your search item!" }]}
       >
-        <Input.Search autoFocus placeholder="input search text" enterButton onSearch={onFinish} />
+        <Input.Search autoFocus placeholder="Search what you want to watch..." enterButton onSearch={onFinish} />
       </Form.Item>
     </Form>
   );
