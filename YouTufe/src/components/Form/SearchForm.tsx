@@ -23,7 +23,7 @@ const SearchForm = () => {
         name="search"
         rules={[{ required: true, message: "Please enter your search item!" }]}
       >
-        <Input.Search autoFocus placeholder="Search what you want to watch..." enterButton onSearch={onFinish} />
+        <Input.Search size="large" autoFocus placeholder="Search what you want to watch..." enterButton onSearch={onFinish} />
       </Form.Item>
     </Form>
   );
