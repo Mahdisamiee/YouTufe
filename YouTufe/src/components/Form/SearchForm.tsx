@@ -17,7 +17,7 @@ const SearchForm = () => {
       // onFinish={onFinish}
       onFinishFailed={onFinishFailed}
       autoComplete="off"
-      style={{width: "60%"}}
+      style={{width: "45%"}}
     >
       <Form.Item
         name="search"

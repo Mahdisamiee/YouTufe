@@ -2,6 +2,7 @@ import classes from "./About.module.css";
 import { Avatar, Typography, Image, Timeline, Space } from "antd";
 import {
   FacebookOutlined,
+  GithubOutlined,
   InstagramOutlined,
   LinkedinOutlined,
   SmileOutlined,
@@ -12,12 +13,15 @@ import React from "react";
 const { Title, Paragraph: Para, Link } = Typography;
 
 import image from "../../assets/images/bgr-01.jpg";
+import mahdi from "../../assets/images/mahdi.jpg";
+import youtufeLogo from "../../assets/images/logo/youtufe-logo-4.png";
+import techtabLogo from "../../assets/images/logo/techtab-logo.png";
 
 const About = () => {
   return (
     <div className="about-container">
       <div className={[classes.info, classes.infoWhy].join(" ")}>
-        <img src={image} alt="image" />
+        <img src={youtufeLogo} alt="image" />
         <Para>
           hi this is YOUTUFE. an idea that comes from the Deep Work book. the summary of idea is
           when we enter the YouTube site to see a tutorial or understand a topic, we realize that we
@@ -27,7 +31,7 @@ const About = () => {
         </Para>
       </div>
       <div className={[classes.info, classes.infoMe].join(" ")}>
-        <img src={image} alt="image" />
+        <img src={mahdi} alt="image" />
         <Para>
           Hello friends, I am Mehdi. a person who likes to give ideas and turn ideas into products.
           That's why I became a front-end developer to implement ideas. You can contact me through
@@ -36,7 +40,7 @@ const About = () => {
         </Para>
       </div>
       <div className={[classes.info, classes.infoTechTab].join(" ")}>
-        <img src={image} alt="image" />
+        <img src={techtabLogo} alt="image" />
         <Para>
           TechTab is a team that created by some of graduted computer students. we provide services
           and products using AI and ML technology that help every person, from every where to have a
@@ -80,10 +84,10 @@ const About = () => {
           </Link>
         </Para>
         <Para>
-          <Link href="#">
+          <Link target="_blank" href="https://github.com/Mahdisamiee/YouTufe">
             <Space>
-              <LinkedinOutlined />
-              <span>wwdw</span>
+              <GithubOutlined style={{ fontSize: "32px" }} />
+              <span>YouTufe Source Code</span>
             </Space>
           </Link>
         </Para>
